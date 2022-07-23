@@ -4,9 +4,9 @@ import TableUrgent from '../TableUrgent'
 import TableUrgentImportant from '../TableUrgentImportant'
 import TableWhatever from '../TableWhatever'
 
-export default function Tables() {
+export default function CustomTables() {
   return (
-    <div className="tables">
+    <section className="tables">
       <TableUrgent />
 
       <TableUrgentImportant />
@@ -14,6 +14,6 @@ export default function Tables() {
       <TableWhatever />
 
       <TableImportant />
-    </div>
+    </section>
   )
 }

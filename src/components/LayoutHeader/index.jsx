@@ -1,7 +1,7 @@
 import iconLogout from '../../assets/logout.png'
 import './style.css'
 
-export default function HeaderMain() {
+export default function LayoutHeader() {
   return (
     <header className="main__header">
       <h1 className="logo">

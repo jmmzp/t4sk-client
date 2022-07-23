@@ -1,21 +1,14 @@
-import './style.css'
-import HeaderMain from '../../components/HeaderMain'
-import Tables from '../../components/Tables'
+import { Divider } from '@mui/material'
+import LayoutHeader from '../../components/LayoutHeader'
+import { dividerStyle } from '../../styles'
 
 export default function Main() {
   return (
-    <div className="container">
-      <HeaderMain />
+    <section className="container">
+      <LayoutHeader />
 
-      <div className="divider"></div>
-
-      <div className="main">
-        <h1 className="main__title">
-          Olá <span>nome_user</span>, Aqui estão suas tasks.
-        </h1>
-
-        <Tables />
-      </div>
-    </div>
+      <Divider sx={dividerStyle} />
+      <section className="container__projects"></section>
+    </section>
   )
 }
