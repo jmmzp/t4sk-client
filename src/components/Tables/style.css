@@ -32,22 +32,6 @@
   background-color: #ffffff;
 }
 
-.urgent {
-  background-color: #ff9966;
-}
-
-.important-urgent {
-  background-color: #cc3300;
-}
-
-.not-urgent__not-important {
-  background-color: #99cc33;
-}
-
-.important {
-  background-color: #ffcc00;
-}
-
 .saves__task {
   margin-top: 1.2rem;
   width: 90%;

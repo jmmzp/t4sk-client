@@ -2,7 +2,7 @@ import './style.css'
 
 export default function TableUrgentImportant() {
   return (
-    <div className="card important-urgent">
+    <div className="card urgent-important">
       <h2>urgente - importante</h2>
       <div className="saves__task">
         <div className="task"></div>
