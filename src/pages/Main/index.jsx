@@ -11,7 +11,7 @@ export default function Main() {
 
       <div className="main">
         <h1 className="main__title">
-          Olá <span>Zeca</span>, Aqui estão suas tasks.
+          Olá <span>nome_user</span>, Aqui estão suas tasks.
         </h1>
 
         <Tables />

@@ -1,6 +1,7 @@
 .tables {
   width: 95%;
   height: 100%;
+
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -9,7 +10,8 @@
 .card {
   width: 48%;
   height: 47%;
-
+  border-radius: 2.4rem;
+  box-shadow: 0 0 20px 5px rgb(176, 166, 166);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,9 +23,13 @@
 
 .card h2 {
   margin-top: 0.8rem;
-  padding: 0.6rem;
+  padding: 0 1.4rem 0.3rem;
+  border-radius: 1.6rem;
+  font-family: 'Montserrat';
+  font-weight: 700;
   font-variant: small-caps;
-  background-color: white;
+
+  background-color: #ffffff;
 }
 
 .urgent {
@@ -48,7 +54,8 @@
 }
 
 .task {
-  background-color: #9c9393;
+  color: #3d3535;
+  height: 4rem;
 
   margin-bottom: 1.4rem;
   padding: 0.8rem;
