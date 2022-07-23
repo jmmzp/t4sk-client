@@ -1,0 +1,33 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+}
+
+.login__rightside {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login__leftside {
+  width: 40%;
+  background-image: url('../../assets/bg-login.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.login__logo {
+  color: #3d3535;
+  font: normal 900 7.2rem 'Montserrat';
+
+  margin-bottom: 4.4rem;
+}
+
+.login__logo strong {
+  font-weight: 900;
+  color: #cc3300;
+}

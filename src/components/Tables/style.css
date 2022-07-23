@@ -1,0 +1,58 @@
+.tables {
+  width: 95%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  width: 48%;
+  height: 47%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.4rem;
+  color: #000;
+
+  overflow: auto;
+}
+
+.card h2 {
+  margin-top: 0.8rem;
+  padding: 0.6rem;
+  font-variant: small-caps;
+  background-color: white;
+}
+
+.urgent {
+  background-color: #ff9966;
+}
+
+.important-urgent {
+  background-color: #cc3300;
+}
+
+.not-urgent__not-important {
+  background-color: #99cc33;
+}
+
+.important {
+  background-color: #ffcc00;
+}
+
+.saves__task {
+  margin-top: 1.2rem;
+  width: 90%;
+}
+
+.task {
+  background-color: #9c9393;
+
+  margin-bottom: 1.4rem;
+  padding: 0.8rem;
+
+  display: flex;
+  justify-content: space-between;
+}

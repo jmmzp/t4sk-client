@@ -1,0 +1,40 @@
+.login__form {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.login__form__input {
+  padding: 1.6rem;
+  font: normal 600 1.6rem 'Raleway';
+  border: 1px solid #000;
+  margin-bottom: 10px;
+}
+
+.login__form__button {
+  all: unset;
+  margin-top: 1.6rem;
+  padding: 16px;
+  font: normal 700 1.6rem 'Raleway';
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  border: none;
+}
+
+.login__form__input:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+.login__form__input::placeholder {
+  color: rgb(73, 63, 63);
+  font-size: 1.6rem;
+}
+
+.login__form__button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 1s;
+  transform: scale(1.01);
+}
