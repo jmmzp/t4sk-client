@@ -1,6 +1,6 @@
 import { Divider, Typography } from '@mui/material'
+import FormLoginRegister from '../../components/FormLoginRegister'
 import HeaderInitialPage from '../../components/HeaderInitialPage'
-import InputRegister from '../../components/InputRegister'
 import './style.css'
 
 export default function Register() {
@@ -19,7 +19,10 @@ export default function Register() {
             Registre-se agora mesmo!
           </Typography>
 
-          <InputRegister />
+          <FormLoginRegister
+            state={{ Nome: '', Email: '', Senha: '' }}
+            variables={['Nome', 'Email', 'Senha']}
+          />
         </section>
 
         <section className="initial-page__main__side right register">

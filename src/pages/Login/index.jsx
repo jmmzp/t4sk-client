@@ -1,6 +1,6 @@
 import { Divider, Typography } from '@mui/material'
 import HeaderInitialPage from '../../components/HeaderInitialPage'
-import InputLogin from '../../components/InputLogin'
+import FormLoginRegister from '../../components/FormLoginRegister'
 import './style.css'
 
 export default function Login() {
@@ -35,7 +35,11 @@ export default function Login() {
           >
             Faça seu Login aqui!
           </Typography>
-          <InputLogin />
+
+          <FormLoginRegister
+            state={{ Email: '', Senha: '' }}
+            variables={['Email', 'Senha']}
+          />
         </section>
       </main>
     </div>
