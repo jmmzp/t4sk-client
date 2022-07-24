@@ -58,6 +58,7 @@ export const FilterIcons = () => {
   const invert = themeMode === 'dark' ? '100' : '0'
 
   return {
-    filter: `invert(${invert})`
+    filter: `invert(${invert})`,
+    cursor: 'pointer'
   }
 }

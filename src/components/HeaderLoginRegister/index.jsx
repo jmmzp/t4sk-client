@@ -12,7 +12,7 @@ export default function HeaderLoginRegister({ valueButton, navigateTo }) {
       <Logo className="initial-page__logo" />
 
       <div>
-        <SwitchTheme />
+        <SwitchTheme className="initial-page__header__button-switch" />
 
         <Button
           onClick={() => navigate(`/${navigateTo}`)}
