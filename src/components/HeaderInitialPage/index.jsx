@@ -2,7 +2,10 @@ import SwitchTheme from '../SwitchTheme'
 import { Logo, ButtonInitialPage } from '../../styles'
 import { Button } from '@mui/material'
 import './style.css'
-export default function HeaderInitialPage() {
+import { useNavigate } from 'react-router-dom'
+export default function HeaderInitialPage({ valueButton, navigateTo }) {
+  const navigate = useNavigate()
+
   return (
     <header className="initial-page__header">
       <Logo className="initial-page__logo" />
@@ -10,8 +13,12 @@ export default function HeaderInitialPage() {
       <div>
         <SwitchTheme />
 
-        <Button sx={ButtonInitialPage} variant="contained">
-          REGISTRE-SE
+        <Button
+          onClick={() => navigate(`/${navigateTo}`)}
+          sx={ButtonInitialPage}
+          variant="contained"
+        >
+          {valueButton}
         </Button>
       </div>
     </header>

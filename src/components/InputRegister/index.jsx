@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import './style.css'
+import { Button } from '@mui/material'
+import { ButtonInitialPage } from '../../styles'
 
 export default function InputRegister({ setAlert }) {
   const [form, setForm] = useState({
@@ -57,7 +59,9 @@ export default function InputRegister({ setAlert }) {
         value={form.senha}
       />
 
-      <button className="register__form__button">ENTRAR</button>
+      <Button sx={ButtonInitialPage} type="submit">
+        REGISTRAR
+      </Button>
     </form>
   )
 }

@@ -1,7 +1,7 @@
 .register__form {
   display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 70%;
 }
 
 .register__form__input {
@@ -11,30 +11,13 @@
   margin-bottom: 10px;
 }
 
-.register__form__button {
-  all: unset;
-  margin-top: 1.6rem;
-  padding: 16px;
-  font: normal 700 1.6rem 'Raleway';
-  background-color: #000;
-  color: #fff;
-  text-align: center;
-  border: none;
-}
-
 .register__form__input:focus {
   box-shadow: 0 0 0 0;
   outline: 0;
 }
 
 .register__form__input::placeholder {
-  color: rgb(73, 63, 63);
-  font-size: 1.6rem;
-}
-
-.register__form__button:hover {
-  cursor: pointer;
-  opacity: 0.8;
-  transition: 1s;
-  transform: scale(1.01);
+  color: rgb(134, 134, 134);
+  font-weight: 500;
+  font-size: 1.4rem;
 }

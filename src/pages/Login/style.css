@@ -1,23 +1,4 @@
-.container {
-  padding: 1.6rem 2.4rem;
-}
-
-.initial-page__main {
-  width: 100%;
-  height: 100%;
-
-  margin: 1.6rem 0 0;
-
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.initial-page__main__side {
-  height: 100%;
-}
-
-.left {
+.left.login {
   width: 58%;
   padding: 5%;
 
@@ -25,7 +6,7 @@
   flex-direction: column;
 }
 
-.right {
+.right.login {
   width: 40%;
   display: flex;
   flex-direction: column;

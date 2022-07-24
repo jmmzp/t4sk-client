@@ -12,6 +12,7 @@ export default function SwitchTheme() {
 
   return (
     <MaterialUISwitch
+      sx={{ marginRight: '1.6rem' }}
       checked={checkedButton}
       onClick={() => handleToggleTheme()}
     />
