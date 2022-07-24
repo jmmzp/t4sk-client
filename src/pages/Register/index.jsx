@@ -1,12 +1,12 @@
 import { Divider, Typography } from '@mui/material'
 import FormLoginRegister from '../../components/FormLoginRegister'
-import HeaderInitialPage from '../../components/HeaderInitialPage'
+import HeaderLoginRegister from '../../components/HeaderLoginRegister'
 import './style.css'
 
 export default function Register() {
   return (
     <div className="container">
-      <HeaderInitialPage valueButton="ENTRAR" navigateTo="login" />
+      <HeaderLoginRegister valueButton="ENTRAR" navigateTo="login" />
 
       <Divider />
 

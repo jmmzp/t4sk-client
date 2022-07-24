@@ -1,9 +1,10 @@
-import SwitchTheme from '../SwitchTheme'
-import { Logo, ButtonInitialPage } from '../../styles'
 import { Button } from '@mui/material'
-import './style.css'
 import { useNavigate } from 'react-router-dom'
-export default function HeaderInitialPage({ valueButton, navigateTo }) {
+import { ButtonInitialPage, Logo } from '../../styles'
+import SwitchTheme from '../SwitchTheme'
+import './style.css'
+
+export default function HeaderLoginRegister({ valueButton, navigateTo }) {
   const navigate = useNavigate()
 
   return (
