@@ -1,33 +1,34 @@
 .container {
-  width: 100vw;
-  height: 100vh;
-
-  display: flex;
+  padding: 1.6rem 2.4rem;
 }
 
-.login__rightside {
-  width: 60%;
+.initial-page__main {
+  width: 100%;
+  height: 100%;
+
+  margin: 1.6rem 0 0;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.initial-page__main__side {
+  height: 100%;
+}
+
+.left {
+  width: 58%;
+  padding: 5%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.right {
+  width: 40%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.login__leftside {
-  width: 40%;
-  background-image: url('../../assets/bg-login.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.login__logo {
-  color: #3d3535;
-  font: normal 900 7.2rem 'Montserrat';
-
-  margin-bottom: 4.4rem;
-}
-
-.login__logo strong {
-  font-weight: 900;
-  color: #cc3300;
 }

@@ -1,21 +1,37 @@
+import { Divider, Typography } from '@mui/material'
 import InputLogin from '../../components/InputLogin'
-import { useState } from 'react'
 import './style.css'
+import HeaderInitialPage from '../../components/HeaderInitialPage'
 
 export default function Login() {
-  const [alert, setAlert] = useState(null)
-
   return (
-    <section className="container">
-      <section className="login__leftside"></section>
-      <section className="login__rightside">
-        <h1 className="login__logo">
-          T<strong>4</strong>SK
-        </h1>
+    <div className="container">
+      <HeaderInitialPage />
 
-        <span className="alert"> {alert} </span>
-        <InputLogin setAlert={setAlert} />
-      </section>
-    </section>
+      <Divider />
+
+      <main className="initial-page__main">
+        <section className="initial-page__main__side left">
+          <Typography
+            sx={{ marginBottom: '3.2rem' }}
+            variant="initialPagePrimary"
+          >
+            Organizando suas tarefas do melhor jeito com o TASK.
+          </Typography>
+          <Typography variant="initialPageSecondary">
+            O que é o TASK?
+          </Typography>
+
+          <Typography variant="initialPagePrimary">
+            É uma forma de organizar as atividades que não podem ser esquecidas,
+            e que não estão inseridas na nossa rotina.
+          </Typography>
+        </section>
+
+        <section className="initial-page__main__side right">
+          <InputLogin />
+        </section>
+      </main>
+    </div>
   )
 }

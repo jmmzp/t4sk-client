@@ -21,6 +21,11 @@ body {
   min-height: 100vh;
 }
 
+/* Logo das páginas iniciais */
+.initial-page {
+  height: 50px;
+}
+
 .alert {
   color: #cc3300;
   font-size: 1.4rem;

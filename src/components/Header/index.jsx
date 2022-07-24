@@ -1,12 +1,11 @@
 import iconLogout from '../../assets/logout.png'
 import './style.css'
+import { Logo } from '../../styles'
 
-export default function LayoutHeader() {
+export default function Header() {
   return (
     <header className="main__header">
-      <h1 className="logo">
-        T<strong>4</strong>SK
-      </h1>
+      <Logo />
 
       <img
         src={iconLogout}

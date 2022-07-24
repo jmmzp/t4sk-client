@@ -1,7 +1,9 @@
+import { Button } from '@mui/material'
 import { useState } from 'react'
+import { ButtonInitialPage } from '../../styles'
 import './style.css'
 
-export default function InputLogin({ setAlert }) {
+export default function InputLogin() {
   const [form, setForm] = useState({
     email: '',
     senha: ''
@@ -9,14 +11,15 @@ export default function InputLogin({ setAlert }) {
 
   const handleSubmit = e => {
     e.preventDefault()
-    setAlert(null)
 
     if (!form.email) {
-      return setAlert('Digite seu email.')
+      return
     }
     if (!form.senha) {
-      return setAlert('Digite sua senha.')
+      return
     }
+
+    console.log(form)
   }
 
   const handleChangeForm = e => {
@@ -45,7 +48,9 @@ export default function InputLogin({ setAlert }) {
         value={form.senha}
       />
 
-      <button className="login__form__button">ENTRAR</button>
+      <Button sx={ButtonInitialPage} type="submit">
+        Entrar
+      </Button>
     </form>
   )
 }
