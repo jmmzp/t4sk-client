@@ -6,6 +6,7 @@ import Tables from './pages/Tables'
 import PageNotFound from './pages/PageNotFound'
 import { ThemeProvider, CssBaseline } from '@mui/material'
 import useUserContext from './hooks/useUserContext'
+import PrivateRoutes from './components/PrivateRoutes'
 
 export default function AppRoutes() {
   const { theme } = useUserContext()
@@ -18,9 +19,23 @@ export default function AppRoutes() {
 
         <Route exact path="/register" element={<Register />} />
 
-        <Route exact path="/" element={<Main />} />
-
-        <Route path="/tabelas/:tableId" element={<Tables />} />
+        <Route
+          exact
+          path="/"
+          element={
+            <PrivateRoutes>
+              <Main />
+            </PrivateRoutes>
+          }
+        />
+        <Route
+          path="/tabelas/:tableId"
+          element={
+            <PrivateRoutes>
+              <Tables />
+            </PrivateRoutes>
+          }
+        />
 
         <Route path="/*" element={<PageNotFound />} />
       </Routes>
