@@ -1,18 +1,12 @@
 import { useLocalStorage } from 'react-use'
-import { useEffect, useMemo } from 'react'
+import { useMemo } from 'react'
 import { createTheme } from '@mui/material'
 
 export default function useThemeMode() {
-  let initialValue = 'light'
-
   const [themeMode, setThemeMode, removeThemeMode] = useLocalStorage(
     'theme',
-    initialValue
+    'dark'
   )
-
-  useEffect(() => {
-    initialValue = themeMode
-  }, [themeMode])
 
   const theme = useMemo(
     () =>
