@@ -1,9 +1,11 @@
 import { Button } from '@mui/material'
 import { useState } from 'react'
 import { ButtonInitialPage } from '../../styles'
+import useLoginContext from '../../hooks/useLoginContext'
 import './style.css'
 
 export default function FormLoginRegister({ state, variables }) {
+  const { setAlert } = useLoginContext()
   const [form, setForm] = useState(state)
 
   const handleSubmit = e => {
@@ -15,15 +17,31 @@ export default function FormLoginRegister({ state, variables }) {
 
     if (inputName) {
       if (!form.Nome) {
-        return console.log('Digite o seu nome.')
+        return setAlert({
+          severity: 'info',
+          message: 'Digite o seu nome.'
+        })
       }
     }
 
     if (!form.Email) {
-      return console.log('Digite o seu email.')
+      return setAlert({
+        severity: 'info',
+        message: 'Digite o seu email.'
+      })
     }
     if (!form.Senha) {
-      return console.log('Digite o sua senha.')
+      return setAlert({
+        severity: 'info',
+        message: 'Digite a sua senha.'
+      })
+    }
+
+    if (inputName) {
+      return setAlert({
+        severity: 'success',
+        message: 'Cadastrado com sucesso.'
+      })
     }
   }
 

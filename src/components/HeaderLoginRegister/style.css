@@ -11,3 +11,9 @@
   display: flex;
   align-items: center;
 }
+
+.alert__login-register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

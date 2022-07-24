@@ -62,3 +62,7 @@ export const FilterIcons = () => {
     cursor: 'pointer'
   }
 }
+
+export const AlertsStyle = {
+  fontSize: '1.4rem'
+}
