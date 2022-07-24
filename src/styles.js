@@ -14,7 +14,7 @@ export const Logo = () => {
     return (
       <img
         src={logoLight}
-        className="logo initial-page"
+        className="logo initial-page "
         alt="Logo da t4sk cor clara."
       />
     )
@@ -49,5 +49,15 @@ export const ButtonInitialPage = () => {
       backgroundColor: colorInverseTheme,
       border: `1px solid ${colorTheme}`
     }
+  }
+}
+
+export const FilterIcons = () => {
+  const { themeMode } = useUserContext()
+
+  const invert = themeMode === 'dark' ? '100' : '0'
+
+  return {
+    filter: `invert(${invert})`
   }
 }

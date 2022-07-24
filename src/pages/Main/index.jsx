@@ -1,12 +1,16 @@
 import { Divider } from '@mui/material'
+import HeaderMain from '../../components/HeaderMain'
 import { dividerStyle } from '../../styles'
 import './style.css'
 
 export default function Main() {
   return (
     <section className="container">
+      <HeaderMain />
+
       <Divider sx={dividerStyle} />
-      <section className="container__projects"></section>
+
+      <main className="container__projects"></main>
     </section>
   )
 }

@@ -4,20 +4,17 @@ import CustomTables from '../../components/CustomTables'
 import { dividerStyle } from '../../styles'
 import './style.css'
 import { Typography } from '@mui/material'
+import HeaderMain from '../../components/HeaderMain'
 
 export default function Tables() {
   const { tableId } = useParams()
   return (
     <section className="container">
+      <HeaderMain />
+
       <Divider sx={dividerStyle} />
 
-      <h1>{tableId}</h1>
-
-      <section className="main">
-        <Typography variant="h3">Olá , Aqui estão suas tasks.</Typography>
-
-        <CustomTables />
-      </section>
+      <main className="container__tables"></main>
     </section>
   )
 }
